@@ -1,16 +1,18 @@
 #include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-int sum(int,int);
-int winlos(int a[]);
-
-int main()
-{
-    char* row[5] = {"1","2","3","4","5","6"};
-    int win[5] = {0};
-    int sum1 = 0;
-    int sd = 0;
-    int num = 0;
-    int dice1 = 0;
-    int dice2 = 0;
+void main(){
+     long int n,i=1,d=0,m=0,l=0;
+     clrscr();
+     printf("\n\t\t\tEnter binary:");
+     scanf("%ld",&n);
+     printf("\n\n\t\t\t---------------------");
+     printf("\n\t\t\tBinary to decimal:");
+     while(n>0){
+               m=(n%10);
+               n=(n/10);
+               l=m*i;
+               d=d+l;
+               i=i*2;
+          }
+     printf("%ld",d);
+     printf("\n\t\t\t---------------------");
 }
